@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+@model Post
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Welcome @ViewBag.name !!!</h2>
+    <a href="/LogOut">Log Off</a> 
+    <form action="CreateIdea" method="post">
+        <input type="text" asp-for="Posts">
+        <span asp-validation-for="Posts"> </span>
+        <button type="submit">Idea</button>
+    </form>
+    
+    @foreach(var post in ViewBag.allPost)
+    {
+        <p> <a href="home/DisplayUser/@post.UsersId">@post.AliasName</a> says:</p> <div>@post.Posts</div>
+        if(@post.UsersId == ViewBag.UsersId)
+        {
+            <a href="home/Delete/@post.PostId">Delete</a>
+        }
+        <a href="home/Like/@post.PostId">Like |</a>
+        <a href="home/DisplayPeople/@post.PostId/@post.UsersId">@post.Likes people</a> <span> like this.</span>
+    }
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <span> <a href="/DashBoard">DashBoard |</a></span>
+        <a href="/LogOut">Log Off</a> 
+    <p><a href="/home/DisplayUser/@ViewBag.idea.UsersId">@ViewBag.idea.AliasName</a> says:</p>
+    <p>@ViewBag.idea.Posts</p>
+
+    <h3>People who like this post:</h3>
+    <table class="table table-striped">
+    <tr>
+        <th>Alias</th>
+        <th>Name</th> 
+    </tr>
+        <!-- here goes the names -->
+        @foreach(var like in @ViewBag.allpeeps){
+            
+    <tr>
+        <td><a href="/home/DisplayUser/@like.UsersId">@like.Users.Alias</a></td>
+        <td>@like.Users.Name</td>
+    </tr>
+}
+</table>
+</body>
+</html>

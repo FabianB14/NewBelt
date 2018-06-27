@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+@model ViewUsers
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+            <h1>Register</h1>
+                <form asp-action="Register" asp-controller="home" method="post">
+                        <fieldset enabled>
+                            <div class="form-group">
+                        <input  asp-for="Name" placeholder="Name"class="form-control">
+                        <span asp-validation-for="Name"> </span>
+                        </div>
+                        <div class="form-group">
+                        <input  asp-for="Alias" placeholder="Alias" class="form-control">
+                        <span asp-validation-for="Alias"> </span>
+                        </div>
+                        <div class="form-group">
+                        <input asp-for="Email" type="email" placeholder="Email"class="form-control">
+                        <span asp-validation-for="Email"> </span>
+                        <span>@ViewBag.emailmessage</span>
+                        </div>
+                        <div class="form-group">
+                        <input  asp-for="Password" type="password" placeholder="Password"class="form-control">
+                        <span asp-validation-for="Password"> </span>
+                        <span > @ViewBag.error</span>
+                        </div>
+                        <div class="form-group">
+                        <input type="password" asp-for="ConfirmPassword" placeholder="Password Confirmation"class="form-control">
+                        <span asp-validation-for="ConfirmPassword"> </span>
+                    <button type="submit">Register</button>
+                    </div>
+                    </fieldset>
+                </form>
+                <h1>Login</h1>
+                <form asp-action="Login" asp-controller="home" method="post">
+                        <fieldset enabled>
+                        <input asp-for="Email" type="email" placeholder="Email">
+                        <span>@ViewBag.message</span>
+                        <input  asp-for="Password" type="password" placeholder="Password">
+                        </fieldset>
+                        <button type="submit">Login</button>
+                </form>
+</body>
+</html>

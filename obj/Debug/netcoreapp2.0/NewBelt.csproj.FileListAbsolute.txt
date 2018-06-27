@@ -1,0 +1,11 @@
+C:\Users\Fabia\OneDrive\Desktop\Desktop\ASPNET\newbelt\bin\Debug\netcoreapp2.0\NewBelt.deps.json
+C:\Users\Fabia\OneDrive\Desktop\Desktop\ASPNET\newbelt\bin\Debug\netcoreapp2.0\NewBelt.runtimeconfig.json
+C:\Users\Fabia\OneDrive\Desktop\Desktop\ASPNET\newbelt\bin\Debug\netcoreapp2.0\NewBelt.runtimeconfig.dev.json
+C:\Users\Fabia\OneDrive\Desktop\Desktop\ASPNET\newbelt\bin\Debug\netcoreapp2.0\NewBelt.dll
+C:\Users\Fabia\OneDrive\Desktop\Desktop\ASPNET\newbelt\bin\Debug\netcoreapp2.0\NewBelt.pdb
+C:\Users\Fabia\OneDrive\Desktop\Desktop\ASPNET\newbelt\obj\Debug\netcoreapp2.0\NewBelt.csprojResolveAssemblyReference.cache
+C:\Users\Fabia\OneDrive\Desktop\Desktop\ASPNET\newbelt\obj\Debug\netcoreapp2.0\NewBelt.csproj.CoreCompileInputs.cache
+C:\Users\Fabia\OneDrive\Desktop\Desktop\ASPNET\newbelt\obj\Debug\netcoreapp2.0\NewBelt.AssemblyInfoInputs.cache
+C:\Users\Fabia\OneDrive\Desktop\Desktop\ASPNET\newbelt\obj\Debug\netcoreapp2.0\NewBelt.AssemblyInfo.cs
+C:\Users\Fabia\OneDrive\Desktop\Desktop\ASPNET\newbelt\obj\Debug\netcoreapp2.0\NewBelt.dll
+C:\Users\Fabia\OneDrive\Desktop\Desktop\ASPNET\newbelt\obj\Debug\netcoreapp2.0\NewBelt.pdb
